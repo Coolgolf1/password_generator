@@ -5,7 +5,7 @@ A secure and customizable password generator written in C++. This program allows
 ## Features
 - Generate passwords from **8 to 64 characters** in length.
 - Choose between different character sets:
-  - Easily readable characters (avoiding ambiguous symbols like `0` and `O`).
+  - Easily readable characters (avoiding ambiguous symbols like `0` and `O` and 'l' '1').
   - Include or exclude **symbols** (`!@#$%^&*()` etc.).
   - Include or exclude **uppercase letters**.
 - Ensures high security by generating **random** and **unpredictable** passwords.
