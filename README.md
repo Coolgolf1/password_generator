@@ -1,6 +1,6 @@
 # Safe Password Generator
 
-A secure and customizable password generator written in C++. This program allows you to create strong passwords with adjustable lengths and customizable character options.
+A secure and customizable password generator written in C++. This program allows you to create strong passwords with adjustable lengths, customizable character options and a password history.
 
 ## Features
 - Generate passwords from **8 to 64 characters** in length.
