@@ -15,7 +15,7 @@ A secure and customizable password generator written in C++. This program allows
 Ensure you have a C++ compiler installed (e.g., g++ for Linux/macOS or MinGW for Windows). Clone or download the repository and compile the program:
 
 ```sh
- g++ -o password_generator password_generator.cpp
+ g++ -o password_generator main.cpp
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Run the program and specify your password preferences:
 You will be prompted to choose the length, character options, and whether to include symbols and uppercase letters.
 
 ## Security Note
-This generator uses C++'s **random device** to ensure the highest level of randomness. However, for highly sensitive environments, consider using a password manager or cryptographic libraries.
+This generator seeds a `std::mt19937` (Mersenne Twister) engine with `std::random_device`. This is fine for everyday use, but `std::mt19937` is **not a cryptographically secure** random number generator, so for highly sensitive environments use a password manager or a cryptographic library instead.
 
 ## License
 This project is open-source under the **MIT License**. Feel free to contribute or modify it for your needs!
